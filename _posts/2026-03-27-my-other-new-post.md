@@ -7,6 +7,6 @@ image:
   path: /assets/img/farmhouse_in_provence_1970.17.34.jpg
   alt: post image
 categories: [Art, Van Gogh]
-tags: [van gogh, art]
+tags: [van gogh, art, provence]
 published: true
 ---
