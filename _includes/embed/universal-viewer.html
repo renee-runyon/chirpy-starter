@@ -1,17 +1,21 @@
 {% assign manifest_url = include.manifest %}
 {% assign viewer_id = include.id | default: "uv-viewer" %}
 {% assign height = include.height | default: "600px" %}
+{% assign width = include.width | default: "100%" %}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/uv.css" />
 <script type="application/javascript" src="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/umd/UV.js"></script>
 
-<div id="{{ viewer_id }}" class="uv" style="height: {{ height }}; width: 100%;"></div>
+<div style="display: flex; justify-content: {{ include.align | default: 'center' }};">
+  <div id="{{ viewer_id }}" class="uv" style="height: {{ height }}; width: {{ width }};"></div>
+</div>
 
 <script>
   window.addEventListener("load", function () {
     UV.init("{{ viewer_id }}", {
       manifest: "{{ manifest_url }}",
-      embedded: true
+      embedded: true,
+      canvasIndex: {{ include.canvas | default: 0 }}
     });
   });
 </script>

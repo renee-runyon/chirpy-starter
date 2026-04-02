@@ -3,7 +3,6 @@
 {% assign height = include.height | default: "600px" %}
 
 <div id="{{ viewer_id }}" style="height: {{ height }}; width: 100%; position: relative;"></div>
-
 <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/mirador@latest/dist/mirador.min.css" />
 
@@ -15,7 +14,8 @@
     },
     windows: [
       {
-        manifestId: "{{ manifest_url }}"
+        manifestId: "{{ manifest_url }}",
+        canvasIndex: {{ include.canvas | default: 0 }}
       }
     ],
     workspace: {
