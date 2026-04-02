@@ -2,7 +2,7 @@
 layout: post
 title: My New Post
 date: 2026-03-27 12:09 -0400
-description: First post
+description: Washington Crossing the Delaware
 image:
   path: /assets/img/hero.jpg
   alt: post image

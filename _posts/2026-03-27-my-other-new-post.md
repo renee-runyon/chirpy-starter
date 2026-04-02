@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My Other New Post
+title: Van Gogh
 date: 2026-03-27 12:13 -0400
-description: Second post
+description: Farmhouse in Provence
 image:
   path: /assets/img/farmhouse_in_provence_1970.17.34.jpg
   alt: post image
