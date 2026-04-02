@@ -10,3 +10,5 @@ categories: [Art, American Revolution]
 tags: [washington, american revolution, delaware river]
 published: true
 ---
+
+{% include embed/mirador.html manifest="https://iiif.harvardartmuseums.org/manifests/object/299843" %}

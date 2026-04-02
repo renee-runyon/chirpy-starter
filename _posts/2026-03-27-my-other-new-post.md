@@ -10,3 +10,4 @@ categories: [Art, Van Gogh]
 tags: [van gogh, art, provence]
 published: true
 ---
+{% include embed/universal-viewer.html manifest="https://iiif.harvardartmuseums.org/manifests/object/299843" %}
